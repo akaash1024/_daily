@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "./App.css";
+import { Counter } from "./Counter";
 
 // function App() {
 //   const [todos, setTodos] = useState([]);
@@ -91,15 +92,21 @@ import "./App.css";
 //   );
 // }
 
+// function App() {
+//   const countRef = useRef(0);
+
+//   const handleClick = () => {
+//     countRef.current += 1;
+//     console.log(countRef.current);
+//   };
+
+//   return <button onClick={handleClick}>Click</button>;
+// }
+
+
+
 function App() {
-  const countRef = useRef(0);
-
-  const handleClick = () => {
-    countRef.current += 1;
-    console.log(countRef.current);
-  };
-
-  return <button onClick={handleClick}>Click</button>;
+    return <Counter />
 }
 
 export default App;
